@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm i",
     "start": "node index",
+    "build": "npm i",
     "dev": "nodemon index"
   },
   "keywords": [],

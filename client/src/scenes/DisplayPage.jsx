@@ -14,7 +14,7 @@ const DisplayPage = () => {
   const picturePath = useSelector((state)=>state.picturePath);
   const copyLink = () => {
     if(picturePath){
-        copy(`http://localhost:8000/assets/${picturePath}`);
+        copy(`https://iusoham.onrender.com/assets/${picturePath}`);
         setIsCopied("Copied!");
         setIsClicked(true);
     }
@@ -56,10 +56,10 @@ const DisplayPage = () => {
                             Uploaded Successfully!
                         </Typography>
                         <Box sx={{margin:"10% auto", height:"224px", width:"338px"}}>
-                            <img src={`http://localhost:8000/assets/${picturePath}`} alt='none' style={{width:"100%", height:"100%",borderRadius:"12px"}} />
+                            <img src={`https://iusoham.onrender.com/assets/${picturePath}`} alt='none' style={{width:"100%", height:"100%",borderRadius:"12px"}} />
                         </Box>
                         <Box sx={{margin:"20px auto", height:"34px", width:"338px", backgroundColor:"#F6F8FB", zIndex:"1", borderRadius:"8px", display:"flex",  justifyContent:"flex-end", flexDirection:"row"}}>
-                            <input style={{height:"34px", width:"240px", fontSize:"12px", border:"0", textAlign:"start"}} disabled value={`http://localhost:8000/assets/${picturePath}`} />
+                            <input style={{height:"34px", width:"240px", fontSize:"12px", border:"0", textAlign:"start"}} disabled value={`https://iusoham.onrender.com/assets/${picturePath}`} />
                             <Button disabled={isClicked} variant="contained" sx={{height:"30px", width:"74px", borderRadius:"8px", fontSize:"12px", textAlign:"center"}} onClick={copyLink}>
                                 {isCopied}
                             </Button>

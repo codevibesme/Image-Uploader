@@ -13,7 +13,7 @@ const DragAndDrop = () => {
         const form = new FormData();
         form.append("picture", acceptedFiles[0]);
         form.append("picturePath", acceptedFiles[0].name);
-        const response = await fetch("http://localhost:8000", {
+        const response = await fetch("https://iusoham.onrender.com", {
                 method:"POST",
                 body: form
             },
@@ -36,7 +36,7 @@ const DragAndDrop = () => {
             console.log("NO FILE!");
             return;
         }
-        const response = await fetch("http://localhost:8000", {
+        const response = await fetch("https://iusoham.onrender.com", {
                 method:"POST",
                 body: form
             },
